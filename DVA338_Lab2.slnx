@@ -1,0 +1,15 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Elementos de la solución/">
+    <File Path="DVA338_Lab2/shaders/cartoon.frag.glsl" />
+    <File Path="DVA338_Lab2/shaders/cartoon.vert.glsl" />
+    <File Path="DVA338_Lab2/shaders/phong.frag.glsl" />
+    <File Path="DVA338_Lab2/shaders/phong.vert.glsl" />
+    <File Path="DVA338_Lab2/shaders/simple.frag.txt" />
+    <File Path="DVA338_Lab2/shaders/simple.vert.txt" />
+  </Folder>
+  <Project Path="DVA338_Lab2/DVA338_Lab2.vcxproj" Id="62b1c641-2000-407b-abfc-d259566e5d91" />
+</Solution>
