@@ -112,17 +112,16 @@ char* readShaders(const char* fileName) {
 }
 
 void update(int value) {
-	
-	if (rotation) {
-		printf("Tiempo transcurrido\n");
 
+	if (rotation) {
 		knotRotationY += 2.0f;
 		if (knotRotationY > 360.0f) knotRotationY -= 360.0f;
-
 		glutPostRedisplay();
-
-		glutTimerFunc(20, update, 0);
 	}
+
+	// El temporizador se rearma siempre (~50 FPS); si solo se rearmara con la
+	// rotacion activa, al pausar con 'p' la animacion ya no podria reanudarse
+	glutTimerFunc(20, update, 0);
 }
 
 GLuint prepareShaderProgram(const char * vertName, const char * fragName) {
@@ -396,7 +395,7 @@ void keypress(unsigned char key, int x, int y) {
 		printf("Usando Shader: Phong\n");
 		break;
 	case '4':
-		activeShader = 3; // Cambia al shader Phong
+		activeShader = 3; // Cambia al shader Cartoon
 		printf("Usando Shader: Cartoon\n");
 		break;
 	case 'z':
