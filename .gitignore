@@ -1,0 +1,17 @@
+# Visual Studio
+.vs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+*.user
+*.suo
+*.obj
+*.pdb
+*.ilk
+*.log
+*.tlog
+*.exe
+
+# NuGet packages (restored from packages.config)
+packages/
