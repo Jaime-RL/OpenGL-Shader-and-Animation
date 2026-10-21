@@ -1,12 +1,12 @@
 # OpenGL Shaders & Animation
 
-Real-time 3D renderer in **C++ / OpenGL 3 / GLSL** with switchable shading models, an animated scene, a configurable camera and both **perspective and orthographic** projections. Linear algebra (vectors, matrices, transforms) is implemented from scratch in `algebra.cpp`.
+Real-time 3D renderer in **C++ / OpenGL 4.1 (core profile) / GLSL** with switchable shading models, an animated scene, a configurable camera and both **perspective and orthographic** projections. Linear algebra (vectors, matrices, transforms) is implemented from scratch in `algebra.cpp`.
 
 ## Features
 
 - **4 shader programs**, switchable at runtime:
   1. Basic (colour from normals)
-  2. Interlaced (procedural stripe pattern)
+  2. Interlaced (alternating scanlines)
   3. **Phong** lighting (ambient + diffuse + specular, per fragment)
   4. **Cartoon / toon shading** (quantised lighting)
 - Animated model (continuous rotation, pausable)
@@ -44,6 +44,6 @@ DVA338_Lab2/
 
 ## Tech
 
-C++ · OpenGL 3 · GLSL · freeglut · GLEW · Visual Studio
+C++ · OpenGL 4.1 · GLSL · freeglut · GLEW · Visual Studio
 
 *Lab from Fundamentals of Computer Graphics (DVA338) at Mälardalen University, Sweden.*
