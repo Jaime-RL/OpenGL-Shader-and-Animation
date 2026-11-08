@@ -1,0 +1,2 @@
+# Headers in this project are C++, not C
+*.h linguist-language=C++
