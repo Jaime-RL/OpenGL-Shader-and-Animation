@@ -1,6 +1,10 @@
 # OpenGL Shaders & Animation
 
-Real-time 3D renderer in **C++ / OpenGL 4.1 (core profile) / GLSL** with switchable shading models, an animated scene, a configurable camera and both **perspective and orthographic** projections. Linear algebra (vectors, matrices, transforms) is implemented from scratch in `algebra.cpp`.
+Real-time 3D renderer in **C++ / OpenGL 4.1 / GLSL 4.1** with switchable shading models, an animated scene, a configurable camera and both **perspective and orthographic** projections. Linear algebra (vectors, matrices, transforms) is implemented from scratch in `algebra.cpp`.
+
+![Animated knot rendered with the Phong shader](docs/demo.gif)
+
+![The four shaders: basic, interlaced, Phong and toon](docs/shaders.png)
 
 ## Features
 
@@ -29,6 +33,14 @@ Real-time 3D renderer in **C++ / OpenGL 4.1 (core profile) / GLSL** with switcha
 ## Building
 
 Windows + Visual Studio 2022: open `DVA338_Lab2.slnx`. The **freeglut** and **GLEW** NuGet packages listed in `packages.config` are restored automatically on the first build. Shaders are loaded at runtime from the `DVA338_Lab2/` folder, so run with that folder as the working directory.
+
+Linux (needs freeglut and GLEW, e.g. `sudo apt install freeglut3-dev libglew-dev`):
+
+```bash
+cd DVA338_Lab2
+g++ -O2 -o renderer *.cpp -lGLEW -lglut -lGL -lm
+./renderer
+```
 
 ## Project structure
 
